@@ -29,7 +29,6 @@ namespace SignalRHeartbeatConnectionsNinjectIssue.Hubs
                         IList<ITrackingConnection> trackingConnections = _heartbeat.GetConnections();
 
                         //Does not return any connections when ITransportHearbeat is injected with ninject resolver
-                        //Does return all connctions when not using Ninject dependency resolver
                         Trace.TraceInformation("Total Connections: {0}", trackingConnections.Count());  
 
                         //Real code removed for brevity
